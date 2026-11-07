@@ -1,0 +1,149 @@
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateReverseSlow {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulseAura {
+  0%,
+  100% {
+    box-shadow: 0 0 22px rgba(56, 189, 248, 0.28), 0 0 50px rgba(168, 85, 247, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.58), 0 0 84px rgba(244, 114, 182, 0.35);
+  }
+}
+
+@keyframes shakeError {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  18% {
+    transform: translateX(-10px);
+  }
+  36% {
+    transform: translateX(10px);
+  }
+  54% {
+    transform: translateX(-7px);
+  }
+  72% {
+    transform: translateX(7px);
+  }
+  90% {
+    transform: translateX(-3px);
+  }
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-32deg) scaleX(0.3);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(-560px, 340px, 0) rotate(-32deg) scaleX(1.15);
+    opacity: 0;
+  }
+}
+
+@keyframes driftCloud {
+  0%,
+  100% {
+    transform: translate3d(-2%, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(3%, -8px, 0) scale(1.04);
+  }
+}
+
+@keyframes riseParticle {
+  0% {
+    transform: translateY(20px) scale(0.7);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-130px) scale(1.15);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5.5s ease-in-out infinite;
+}
+
+.animate-pulse-aura {
+  animation: pulseAura 3.4s ease-in-out infinite;
+}
+
+.animate-shake {
+  animation: shakeError 0.46s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.animate-spin-slow {
+  animation: rotateSlow 28s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: rotateReverseSlow 22s linear infinite;
+}
+
+/* Reusable ambient starfield background layer for 2D planet interiors */
+.ambient-starfield {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.ambient-star {
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: twinkle var(--dur, 4s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}

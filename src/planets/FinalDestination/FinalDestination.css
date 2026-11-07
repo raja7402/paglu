@@ -1,0 +1,164 @@
+.final-portal-stage {
+  max-width: 700px;
+  margin: 20px auto 0;
+  padding: 44px 28px;
+  text-align: center;
+  border-radius: 32px;
+  background: rgba(10, 12, 32, 0.84);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.8), 0 0 60px rgba(168, 85, 247, 0.22);
+}
+
+/* Swirling Magical Portal Ring Sculpture */
+.magical-portal-orb {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-ring-1 {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px dashed rgba(251, 191, 36, 0.72);
+  animation: rotateSlow 20s linear infinite;
+}
+
+.portal-ring-2 {
+  position: absolute;
+  inset: 16px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #38bdf8;
+  border-right-color: #a855f7;
+  border-bottom-color: #f472b6;
+  animation: rotateReverseSlow 9s linear infinite;
+}
+
+.portal-ring-3 {
+  position: absolute;
+  inset: 34px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-left-color: #fde68a;
+  border-right-color: #c084fc;
+  animation: rotateSlow 6s linear infinite;
+}
+
+.portal-singularity-core {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    #ffffff 0%,
+    #fde68a 24%,
+    #a855f7 62%,
+    #090619 100%
+  );
+  box-shadow:
+    0 0 45px rgba(251, 191, 36, 0.68),
+    0 0 90px rgba(168, 85, 247, 0.55);
+  animation: pulseAura 3s ease-in-out infinite;
+}
+
+/* Fullscreen Grand Finale Cinema Experience */
+.finale-cinema-root {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  background: #020207;
+  padding: 96px 20px 130px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.finale-fireworks-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.finale-intro-typography {
+  position: relative;
+  z-index: 5;
+  max-width: 780px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.finale-opening-line {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: clamp(1.55rem, 3.8vw, 2.6rem);
+  line-height: 1.45;
+  color: #f8fafc;
+  text-shadow: 0 0 36px rgba(251, 191, 36, 0.45), 0 0 65px rgba(168, 85, 247, 0.45);
+}
+
+.finale-letter-sanctuary {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 760px;
+  padding: 48px 42px;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(251, 191, 36, 0.12), transparent 50%),
+    radial-gradient(circle at 85% 90%, rgba(244, 114, 182, 0.12), transparent 50%),
+    rgba(8, 10, 26, 0.88);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(251, 191, 36, 0.38);
+  box-shadow: 0 34px 100px rgba(0, 0, 0, 0.9), 0 0 65px rgba(168, 85, 247, 0.22);
+}
+
+.finale-letter-paragraph {
+  font-family: var(--font-editorial);
+  font-size: clamp(1.18rem, 2.3vw, 1.38rem);
+  line-height: 1.78;
+  color: #f1f5f9;
+  margin-bottom: 20px;
+}
+
+.finale-closing-block {
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(251, 191, 36, 0.26);
+  text-align: center;
+}
+
+.finale-closing-quote {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: clamp(1.22rem, 2.5vw, 1.52rem);
+  color: #fde68a;
+  margin-bottom: 10px;
+}
+
+.finale-signature {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+  font-weight: 700;
+  margin-top: 18px;
+  background: linear-gradient(135deg, #fde68a 0%, #f9a8d4 55%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .finale-letter-sanctuary {
+    padding: 32px 20px;
+  }
+}

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04040c"/>
+      <stop offset="48%" stop-color="#090d24"/>
+      <stop offset="100%" stop-color="#2d124d"/>
+    </linearGradient>
+    <radialGradient id="orbA5" cx="35%" cy="38%" r="48%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.45"/>
+      <stop offset="55%" stop-color="#f472b6" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB5" cx="70%" cy="62%" r="45%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg5)"/>
+  <rect width="1200" height="800" fill="url(#orbA5)"/>
+  <rect width="1200" height="800" fill="url(#orbB5)"/>
+  <g opacity="0.55">
+    <circle cx="180" cy="140" r="2.5" fill="#fff"/>
+    <circle cx="340" cy="210" r="1.8" fill="#f472b6"/>
+    <circle cx="980" cy="150" r="3" fill="#fff"/>
+    <circle cx="1040" cy="310" r="2" fill="#38bdf8"/>
+    <circle cx="260" cy="620" r="2.2" fill="#fff"/>
+    <circle cx="870" cy="640" r="2.5" fill="#f472b6"/>
+    <circle cx="620" cy="120" r="2" fill="#fff"/>
+    <circle cx="460" cy="680" r="1.8" fill="#38bdf8"/>
+  </g>
+  <g transform="translate(600, 365)">
+    <circle r="155" fill="none" stroke="url(#ring5)" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.6"/>
+    <ellipse rx="230" ry="74" fill="none" stroke="url(#ring5)" stroke-width="2.2" transform="rotate(27)" opacity="0.75"/>
+    <circle r="86" fill="#2d124d" stroke="url(#ring5)" stroke-width="2"/>
+    <circle cx="-22" cy="-24" r="22" fill="#f472b6" opacity="0.35"/>
+    <path d="M -38 22 L -10 -12 L 16 14 L 34 -4 L 54 22 Z" fill="none" stroke="#f8fafc" stroke-width="2.5" opacity="0.85" stroke-linejoin="round"/>
+  </g>
+  <rect x="44" y="44" width="1112" height="712" rx="24" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+  <g transform="translate(600, 610)" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">
+    <rect x="-150" y="-34" width="300" height="32" rx="16" fill="rgba(10,14,36,0.78)" stroke="#f472b6" stroke-opacity="0.55"/>
+    <text y="-13" fill="#f472b6" font-size="13" font-weight="700" letter-spacing="3">PLACEHOLDER PHOTO 06</text>
+    <text y="34" fill="#f8fafc" font-size="34" font-weight="700" letter-spacing="1.5">Still Orbiting Together</text>
+    <text y="68" fill="#cbd5e1" font-size="17" opacity="0.82">Add your most cherished photograph here</text>
+  </g>
+</svg>

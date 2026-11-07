@@ -1,0 +1,1 @@
+# Assets Directory\nPlace bundled static images, audio, or 3D GLTF models here, or drop public files directly into `public/images/` and `public/audio/` and reference them in `src/config/pagluConfig.js`.\n
